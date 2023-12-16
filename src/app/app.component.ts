@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+
 
 @Component({
   selector: 'app-root',
@@ -19,4 +20,10 @@ import { HomeComponent } from './home/home.component';
 })
 export class AppComponent {
   title = 'CollegeFBArchive';
+
+  isEnoughContent : boolean = false;
+  @HostListener('window:scroll', ['event'])
+  checkScroll(){
+    this.isEnoughContent = window.innerHeight < document.body.scrollHeight;
+  }
 }
