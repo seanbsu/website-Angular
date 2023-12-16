@@ -10,7 +10,7 @@
 .btn.dropdown-toggle {
   background-color: transparent; /* Remove background color */
   border: none; /* Remove borders */
-  color: inherit; /* Use default text color */
+  color: #e9edf1; /* Use default text color */
   box-shadow: none; /* Remove any box shadow */
   /* Add any additional styling as needed */
 }
@@ -18,5 +18,5 @@
 .dropdown{ margin-top: 2px; }
 
 .navbar-nav .nav-link {
-  color: #fff; /* Set your desired text color here */
+  color: #e9edf1; /* Set your desired text color here */
 }
