@@ -3,9 +3,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
-export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  // Other routes go here
+ const routes: Routes = [
+  { path: '', 
+    component: HomeComponent,
+    title:'CollegeFbArchive' 
+  },
 ];
 
 @NgModule({
@@ -13,4 +15,4 @@ export const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-
+export default routes;

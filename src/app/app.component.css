@@ -12,9 +12,9 @@ SITE HEADER/FOOTER AND HOME PAGE STYLING
     min-height: 100vh;
   }
   
-  router-outlet {
+  /* router-outlet {
     flex: 1;
-  }
+  } */
 
   .sticky-footer {
     position: sticky;
