@@ -20,3 +20,13 @@
 .navbar-nav .nav-link {
   color: #e9edf1; /* Set your desired text color here */
 }
+
+@media (max-width: 992px){
+  .btn.dropdown-toggle{ 
+    padding-left: 0;
+  }
+  #Auth-buttons{
+    float:left;
+}
+
+}
