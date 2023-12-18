@@ -17,6 +17,10 @@
 
 .dropdown{ margin-top: 2px; }
 
+.dropdown-menu {
+  max-height: 100px;
+  overflow-y: scroll;
+}
 .navbar-nav .nav-link {
   color: #e9edf1; /* Set your desired text color here */
 }
@@ -27,6 +31,10 @@
   }
   #Auth-buttons{
     float:left;
+}
+.dropdown-menu.show {
+  display: block;
+  max-width: 20%;
 }
 
 }
